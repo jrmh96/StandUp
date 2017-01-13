@@ -38,7 +38,6 @@ app.use(bodyParser.urlencoded({ extended: false}));
 app.use(express.static(__dirname + '/public'));
 
 // view engine setup
-app.set('view engine', 'html');
 app.set('views', __dirname+'/views');
 
 // include routes

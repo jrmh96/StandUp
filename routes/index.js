@@ -6,7 +6,7 @@ var mid = require("../middleware");
 // GET /
 // Welcome page
 router.get('/', function(req, res, next){
-    return res.render('welcome', { title: 'Home' });
+    return res.render('welcome');
 });
 
 // GET /Register
