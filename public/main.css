@@ -1,0 +1,71 @@
+body {
+    background-color: #80d4ea;
+}
+
+h1{
+    font-family: courier, monospace;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+}
+
+label{
+    font-family: courier, monospace;
+    color: white;
+    font-size: 30px;
+}
+
+#login-container{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -172px;
+    margin-left: -370.25px;
+}
+
+#clock {
+    height: 250px;
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    padding-top: 80px;
+    font-family: courier, monospace;
+    text-align: left;
+    color: black;
+    font-size: 100px;
+    color: white;
+}
+
+#day {
+	height: 560px;
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    padding-top: 70px;
+    font-family: courier, monospace;
+    text-align: left;
+    color: black;
+    font-size: 100px;
+    color: white;
+}
+
+#weatherBlock {
+    width: 480px;
+    height: 100px;
+   
+    position: absolute;
+    top: 100px;
+    right: 50px;
+}
+
+#date {
+	height: 350px;
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    padding-top: 100px;
+    font-family: courier, monospace;
+    color: black;
+    font-size: 50px;
+    color: white;
+}
