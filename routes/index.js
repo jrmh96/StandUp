@@ -1,12 +1,11 @@
 var express = require('express');
 var router = express.Router();
-var User = require("../models/users");
-var mid = require("../middleware");
+
 
 // GET /
 // Welcome page
 router.get('/', function(req, res, next){
-    return res.render('welcome');
+    return res.render('welcome.html');
 });
 
 // GET /Register
