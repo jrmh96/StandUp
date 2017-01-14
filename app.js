@@ -38,9 +38,9 @@ app.use(bodyParser.urlencoded({ extended: false}));
 app.use(express.static(__dirname + '/public'));
 
 // view engine setup
-app.engine('html', require('ejs').renderFile);
-app.set('view engine', 'html');
+app.set('view engine', 'pug');
 app.set('views', __dirname+'/views');
+
 
 // include routes
 var routes = require('./routes/index');

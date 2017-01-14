@@ -39,7 +39,6 @@ label{
 #day {
 	height: 560px;
     margin: auto;
-    position: absolute;
     top: 0; left: 0; bottom: 0; right: 0;
     padding-top: 70px;
     font-family: courier, monospace;
@@ -52,8 +51,6 @@ label{
 #weatherBlock {
     width: 480px;
     height: 100px;
-   
-    position: absolute;
     top: 100px;
     right: 50px;
 }
@@ -61,7 +58,6 @@ label{
 #date {
 	height: 350px;
     margin: auto;
-    position: absolute;
     top: 0; left: 0; bottom: 0; right: 0;
     padding-top: 100px;
     font-family: courier, monospace;

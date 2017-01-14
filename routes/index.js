@@ -5,11 +5,13 @@ var router = express.Router();
 // GET /
 // Welcome page
 router.get('/', function(req, res, next){
-    return res.render('welcome.html');
+    return res.render('welcome');
 });
 
 // GET /Register
-
+router.get('/register', function(req, res, next){
+    return res.render('register')
+});
 
 // POST /Register
 
