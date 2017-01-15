@@ -15,11 +15,10 @@ block content
             div.form-group
                 label(for='email') Email:
                 input#email.form-control(type='text', placeholder='Email' name='email')
-            label(for='location') Location:
-            |<input type="text" class="my-input" name="field" tabindex="1" autocomplete="off" placeholder="location">
-            |<script>
-            include functions/teleport-autocomplete.js
-            |</script>
+            div.form-group
+                label(for="location") City and Town:
+                |(i.e. Los Angeles, California)
+                input#location.form-control(type='text', placeholder='Location', name='email')
             div.form-group
                 label(for="password") Password:
                 input#password.form-control(type="password", placeholder="password" name="password" autocomplete="off")
