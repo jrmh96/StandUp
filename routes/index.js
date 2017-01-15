@@ -16,9 +16,10 @@ router.get('/register', mid.loggedOut, function(req, res, next){
 
 // POST /Register
 router.post('/register', function(req, res, next){
-    if(req.body.email &&
-    req.body.name &&
-    req.body.favoriteBook &&
+    if(req.body.first &&
+    req.body.last &&
+    req.body.email &&
+    req.body.location &&
     req.body.password &&
     req.body.confirmPassword){
         
