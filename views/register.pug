@@ -16,8 +16,8 @@ block content
                 label(for='email') Email:
                 input#email.form-control(type='text', placeholder='Email' name='email')
             |<div class="form-group"> 
-            |<input type="text" class="my-input" name="location" autocomplete="off">
-            |<script src="../dist/teleport-autocomplete.js"></script>
+            |<input type="text" class="my-input" placeholder="location" name="location" autocomplete="off">
+            |<script src="../functions/teleport-autocomplete.js"></script>
 
             |<script>
             |   var $results = document.querySelector('.results');
@@ -27,3 +27,6 @@ block content
             |   });
             |</script>
             |</div>
+            div.form-group
+                label(for="password") Password:
+                input#password.form-control(type="password", placeholder="password" name="password" autocomplete="off")
