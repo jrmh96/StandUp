@@ -28,8 +28,12 @@ var UserSchema = new mongoose.Schema({
     location:{
         type: String,
         required: true
-    }
+    },
 
+    location_formatted:{
+        type: String,
+        required: true
+    }
 });
 
 // authenticate input against database documents

@@ -31,11 +31,12 @@ router.post('/register', function(req, res, next){
         }
 
         // create object with all the form information
-
+        var loc_form = req.body.location.toLowerCase();
         var userData = {
             firstName: req.body.first,
             lastName: req.body.last,
             location: req.body.location,
+
             email: req.body.email,
             password: req.body.password
         };
@@ -73,7 +74,7 @@ router.post("/login", function(req, res, next){
             }
             else{
                 req.session.userId = user._id;
-                return res.render("homePage");
+                return res.redirect("home");
             }
         });
     }
