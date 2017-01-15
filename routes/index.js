@@ -11,7 +11,7 @@ router.get('/', function(req, res, next){
 
 // GET /Register
 router.get('/register', mid.loggedOut, function(req, res, next){
-    return res.render('register')
+    return res.render('register');
 });
 
 // POST /Register
@@ -46,7 +46,7 @@ router.post('/register', function(req, res, next){
                 return next(error);
             } else {
                 req.session.userId = user._id; //once you register, you immediately become logged in
-                return res.redirect('/profile');
+                return res.redirect('/homePage');
             }
         });
 
