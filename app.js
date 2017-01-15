@@ -24,6 +24,11 @@ app.use(session({
     })
 }));
 
+app.use(function (req, res, next) {
+  res.locals.currentUser = req.session.userId;
+  next();
+});
+
 // Initialize app
  var server = app.listen(process.env.PORT || 3000, function () {
     var port = server.address().port;
