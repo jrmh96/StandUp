@@ -1,1 +1,37 @@
-| register
+extends layout
+
+block content
+    .main.container.row
+        h1.display-4.m-b-2 Sign Up
+
+        //register form
+        form(method='POST' action='/register')
+            div.form-group
+                label(for='first') First Name:
+                input#firstName.form-control(type='text', placeholder='First Name' name='first')
+            div.form-group
+                label(for='last') Last Name:
+                input#lastName.form-control(type='text', placeholder='Last Name' name='last')
+            div.form-group
+                label(for='email') Email:
+                input#email.form-control(type='text', placeholder='Email' name='email')
+            |<div class="form-group"> 
+            |<input type="text" class="my-input" name="location" autocomplete="off">
+            |<script src="../dist/teleport-autocomplete.js"></script>
+
+
+            |<script>
+            |var $results = document.querySelector('.results');
+            |var appendToResult = $results.insertAdjacentHTML.bind($results, 'afterend');
+            |TeleportAutocomplete.init('.my-input').on('change', function(value) {
+            |appendToResult('<pre>' + JSON.stringify(value, null, 2) + '</pre>');
+            |});
+            |</script>
+            script
+                var $results = document.querySelector('.results');
+                var appendToResult = $results.insertAdjacentHTML.bind($results, 'afterend');
+                TeleportAutocomplete.init('.my-input').on('change', function(value) {
+                appendToResult('<pre>' + JSON.stringify(value, null, 2) + '</pre>');
+                });
+            |
+            |</div>

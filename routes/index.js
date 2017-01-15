@@ -37,6 +37,12 @@ router.post("/login", function(req, res, next){
     }
 })
 
+//GET homePage
+
+router.get('/home', function(req, res, next){
+    return res.render('homePage');
+})
+
 // GET /logout
 router.get('/logout', function(req, res, next){
     if(req.session){
