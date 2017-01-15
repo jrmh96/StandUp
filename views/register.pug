@@ -17,14 +17,8 @@ block content
                 input#email.form-control(type='text', placeholder='Email' name='email')
             |<div class="form-group"> 
             |<input type="text" class="my-input" placeholder="location" name="location" autocomplete="off">
-            |<script src="../functions/teleport-autocomplete.js"></script>
-
             |<script>
-            |   var $results = document.querySelector('.results');
-            |   var appendToResult = $results.insertAdjacentHTML.bind($results, 'afterend');
-            |   TeleportAutocomplete.init('.my-input').on('change', function(value) {
-            |   appendToResult('<pre>' + JSON.stringify(value, null, 2) + '</pre>');
-            |   });
+            include functions/teleport-autocomplete.js
             |</script>
             |</div>
             div.form-group
