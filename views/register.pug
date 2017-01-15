@@ -19,14 +19,6 @@ block content
             |<input type="text" class="my-input" name="location" autocomplete="off">
             |<script src="../dist/teleport-autocomplete.js"></script>
 
-
-            |<script>
-            |var $results = document.querySelector('.results');
-            |var appendToResult = $results.insertAdjacentHTML.bind($results, 'afterend');
-            |TeleportAutocomplete.init('.my-input').on('change', function(value) {
-            |appendToResult('<pre>' + JSON.stringify(value, null, 2) + '</pre>');
-            |});
-            |</script>
             script
                 var $results = document.querySelector('.results');
                 var appendToResult = $results.insertAdjacentHTML.bind($results, 'afterend');
