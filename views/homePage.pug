@@ -1,0 +1,19 @@
+extends layout
+
+block content
+    .main-container
+        .row
+            .col-md-4.col-md-offset-1
+                div(id="day")
+
+                div(id="date")
+
+                div(id="clock")
+            .col-md-4.col-md-offset-7
+                div(id="weatherBlock")
+                    a(href="https://www.accuweather.com/en/us/new-york-ny/10007/weather-forecast/349727" 
+		class="aw-widget-legal")
+                div(id="weather" class="aw-widget-current"  
+		data-locationkey="" data-unit="f" 
+		data-language="en-us" data-useip="true" data-uid="awcc1483305509777")
+        
