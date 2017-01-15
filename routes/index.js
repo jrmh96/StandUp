@@ -33,9 +33,10 @@ router.post('/register', function(req, res, next){
         // create object with all the form information
 
         var userData = {
+            firstName: req.body.firstName,
+            lastName: req.body.lastName,
+            location: req.body.location,
             email: req.body.email,
-            name: req.body.name,
-            favoriteBook: req.body.favoriteBook,
             password: req.body.password
         };
 
