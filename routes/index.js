@@ -36,6 +36,7 @@ router.post('/register', function(req, res, next){
             firstName: req.body.first,
             lastName: req.body.last,
             location: req.body.location,
+            location_formatted: loc_form,
             email: req.body.email,
             password: req.body.password
         };
