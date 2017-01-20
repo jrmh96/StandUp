@@ -47,7 +47,7 @@ router.post('/register', function(req, res, next){
                 return next(error);
             } else {
                 req.session.userId = user._id; //once you register, you immediately become logged in
-                return res.redirect('/homePage');
+                return res.redirect('/home');
             }
         });
 
